@@ -1,6 +1,9 @@
 /** Global Styles **/
 
 body { font-family: 'Open Sans', sans-serif; }
+* { font-smooth: always; }
+html { scroll-behavior: smooth; }
+a, button { transition: all 0.4s ease; }
 
 header { background: #FFF; line-height: 96px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08); }
 .main-logo { margin-right: 32px; }
@@ -92,14 +95,31 @@ b { font-weight: 600; }
 /** Actionables **/
 
 .btn { background: #FFF; line-height: 16px; padding: 16px; text-align: center; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.10); border-radius: 24px; font-weight: 600; font-size: 14px; }
-.btn.neutral-btn { color: #253A57; }
-.btn.zap-btn { background: #25D366; color: #FFF; }
-.btn.primary-btn { color: #FFF; background: #4C77B3; box-shadow: 0 0 10px 0 rgba(76,119,179,0.23), 0 2px 2px 0 rgba(0,0,0,0.10); border-radius: 24px; }
+.btn:hover { box-shadow: 0 4px 6px 0 rgba(0,0,0,0.16); }
+.btn:active { box-shadow: 0 4px 6px 0 rgba(0,0,0,0); }
+.neutral-btn { color: #253A57; }
+.neutral-btn:hover, .neutral-btn:active { color: #4C77B3; }
+.zap-btn { background: #25D366; color: #FFF; }
+.zap-btn .icon { margin-right: 8px; }
+.zap-btn:hover { color: #FFF; }
+.primary-btn { color: #FFF; background: #4C77B3; box-shadow: 0 0 10px 0 rgba(76,119,179,0.23), 0 2px 2px 0 rgba(0,0,0,0.10); border-radius: 24px; }
+.primary-btn:hover { color: #FFF; background: #5587CD; box-shadow: 0 0 10px 0 rgba(76,119,179,0.23), 0 4px 6px 0 rgba(0,0,0,0.16); }
+.primary-btn:active { color: #FFF; background: #5587CD; box-shadow: 0 4px 6px 0 rgba(0,0,0,0); }
 .main-nav-link { font-weight: 600; font-size: 14px; color: #253A57; margin: 0 16px; }
-.social-holder a { font-size: 24px; margin: 0 16px; color: #4D4D4F; }
+.main-nav-link:hover, .main-nav-link:hover .icon { color: #4C77B3; }
+
+.card-action { background: rgba(255,255,255,0.50); padding: 16px; display: flex; justify-content: center; align-items: center; }
+.card-action:hover { background: rgba(77,77,79,0.04); }
+.card-action .icon { color: #253A57; font-size: 28px; padding: 16px 16px 16px 0; }
+.card-content span { font-weight: 600; font-size: 14px; color: #253A57; letter-spacing: 0; }
+.card-content p { font-weight: 400; font-size: 12px; color: rgba(0,0,0,0.48); letter-spacing: 0; margin: 0; }
+.card-action:hover .icon, .card-action:hover span { color: #4C77B3; }
+
+.social-holder a { font-size: 32px; margin: 0 16px; color: #4D4D4F; }
+.social-holder a:hover { color: #4C77B3; }
 .footer-nav-link { font-weight: 600; font-size: 14px; color: rgba(77,77,79,0.60); margin-bottom: 16px; }
-.wee-link { float: right; }
-.wee-link img { width: 60px; height: auto; }
+.wee-link { float: right; width: 60px; height: 24px; background: url("../img/wee-logo.png") no-repeat; background-size: 100% auto; }
+.wee-link:hover { background: url("../img/wee-logo-hovered.png") no-repeat; background-size: 100% auto; }
 
 header .action-holder .btn { margin-left: 16px; }
 
@@ -107,11 +127,6 @@ header .action-holder .btn { margin-left: 16px; }
 
 .pre-header { background-color: #F6F6F6; }
 .pre-header .row { height: 72px; }
-.card-action { background: rgba(255,255,255,0.50); padding: 16px; display: flex; justify-content: center; align-items: center; }
-.card-action .icon { color: #253A57; font-size: 28px; padding: 16px 16px 16px 0; }
-.card-content span { font-weight: 600; font-size: 14px; color: #253A57; letter-spacing: 0; }
-.card-content p { font-weight: 400; font-size: 12px; color: rgba(0,0,0,0.48); letter-spacing: 0; margin: 0; }
-
 .heading-detail { background: rgba(76,119,179,0.11); font-weight: 400; padding: 0 5px; }
 
 .main-hero { padding: 4% 0; background: #ffffff url("../img/bg-asset.png") no-repeat top center; background-size: 50% auto; }
