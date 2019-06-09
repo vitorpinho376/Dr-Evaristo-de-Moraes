@@ -41,7 +41,7 @@
 
     <!-- Pre Header -->
 
-    <div class="pre-header">
+    <div class="pre-header web">
       <div class="container">
          <div class="row align-items-center no-gutters">
              <!-- Actionable Card -->
@@ -99,7 +99,7 @@
 
   <!-- Header -->
 
-    <header>
+    <header class="web">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -127,7 +127,7 @@
 
     <!-- Dropdown Menu -->
 
-    <div class="drop-container drop-animate" id="drop-toggle">
+    <div class="drop-container drop-animate web" id="drop-toggle">
 
       <div class="drop-menu-structure">
         <div class="container">
@@ -190,28 +190,108 @@
 
     <!-- Dropdown Menu END -->
 
+    <!-- Mobile Header -->
+
+      <header class="mobile-only">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <!-- Logo -->
+              <div class="main-logo block-view">
+                <a href="index.html"><img src="img/logo.png"/></a>
+              </div>
+              <div class="action-holder float-right">
+                <a class="mob-link" href="#" data-toggle="modal" data-target="#mobile-menu"><i class="icon icon-menu"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
     <!-- Main Hero -->
 
     <section class="main-hero">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Hero Content -->
-          <div class="col-md-6">
-            <div class="content-holder">
-              <h1><b class="heading-detail">Sinta-se bem</b> com você mesma!</h1>
-              <p>Especialista em cirurgia plástica pela Sociedade Brasileira de Cirurgia Plástica, <b>Dr. Evaristo de Moraes</b> é um dos nomes mais conceituados no mundo estético atualmente. Marque sua primeira consulta agora mesmo.</p>
-              <a class="btn primary-btn" href="contato.html">Agende sua consulta</a>
-            </div>
-          </div>
+
           <!-- Featured Image -->
-          <div class="col-md-6">
+          <div class="col-md-6 order-md-2">
             <div class="featured-image">
               <img src="img/main-featured-image.png"/>
             </div>
           </div>
+
+          <!-- Hero Content -->
+          <div class="col-md-6">
+            <div class="content-holder">
+              <h1>Cirúrgia Plástica de confiança.</h1>
+              <p>Especialista e titular em cirurgia plástica pela Sociedade Brasileira de Cirurgia Plástica, <b>Dr. Evaristo de Moraes</b> é um dos nomes mais conceituados no mundo estético atualmente. Marque sua primeira consulta agora mesmo.</p>
+              <a class="btn primary-btn" href="contato.html">Agende sua consulta</a>
+              <a href="perfil.html" class="btn neutral-btn">Ver Perfil</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- Mobile Menu Modal -->
+
+      <div class="modal fade" id="mobile-menu" tabindex="-1" role="dialog" aria-labelledby="mobile-menu" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+
+            <div class="container-fluid header-cont">
+              <div class="row">
+                <div class="col-sm">
+                  <!-- Logo -->
+                  <div class="main-logo block-view">
+                    <a href="index.html"><img src="img/Logo-simple.png"/></a>
+                  </div>
+                </div>
+                <!-- Main-actions -->
+                <div class="col-sm">
+                  <div class="action-holder float-right">
+                    <a class="mob-link" href="#" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-body">
+              <nav class="mob-nav">
+                <a class="mob-nav-link" href="index.html">Home</a>
+                <a class="mob-nav-link" data-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseMenu">Procedimentos <i class="icon icon-chevron"></i></a>
+                <div class="collapse" id="collapseMenu">
+                    <div class="card-nav">
+                      <a href="procedimento.html" class="collapse-nav-link">Preenchimento com Gordura</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Toxina Botulínica</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Peeling a Laser</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Lifting Facial</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Rinoplastia</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Implante Capilar</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Otoplastia</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Blefaroplastia</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Correção de Cicatrizes</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Tumores de Pele</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Queimaduras</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Pós-Bariátrica</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Mamoplastia</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Ninfoplastia</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Lifting de Coxas e Braços</a>
+                      <a href="procedimento.html" class="collapse-nav-link">Lipoaspiração</a>
+                    </div>
+                  </div>
+                <a class="mob-nav-link" href="perfil.html">Perfil</a>
+                <a class="mob-nav-link" href="contato.html">Contato</a>
+                <a class="mob-nav-link-primary" href="contato.html">Agende sua consulta</a>
+                <a class="mob-nav-link-wpp" target="_blank" href="https://wa.me/5521999643199"><i class="icon icon-whatsapp"></i> WhatsApp</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Footer -->
 
@@ -219,7 +299,7 @@
       <div class="container">
         <!-- Doctor Profile -->
         <div class="row align-items-center">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="doctor-profile">
               <div class="avatar">
                 <img src="img/doctor-avatar.png" />
@@ -229,12 +309,9 @@
                 <span class="doctor-category">Cirurgião Plástico</span>
                 <span class="doctor-code"><b>CRM-RJ:</b> 5260543-7﻿/ <b>RQE:</b> 20613</span>
               </div>
-              <div class="action-holder">
-                <a href="perfil.html" class="btn neutral-btn">Ver Perfil</a>
-              </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
              <div class="social-holder float-right">
                <a target="_blank" href="https://www.facebook.com/drevaristomoraes/" class="social-link"><i class="icon icon-facebook-filled"></i></a>
                <a target="_blank" href="https://vimeo.com/user85901402" class="social-link"><i class="icon icon-vimeo-filled"></i></a>

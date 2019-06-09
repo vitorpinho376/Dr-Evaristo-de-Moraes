@@ -4,6 +4,7 @@ body { font-family: 'Open Sans', sans-serif; }
 * { font-smooth: always; }
 html { scroll-behavior: smooth; }
 a, button, .card { transition: all 0.4s ease; }
+.mobile-only { display: none; }
 
 header { background: #FFF; line-height: 96px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08); }
 .main-logo { margin-right: 32px; }
@@ -14,6 +15,7 @@ a:hover { text-decoration: none; }
 /** Text **/
 
 h1 { font-weight: 400; font-size: 60px; color: #4D4D4F; letter-spacing: 0; margin-bottom: 24px; }
+.form-holder h1 { font-size: 40px; margin-bottom: 40px; }
 p { font-weight: 400; font-size: 18px; color: rgba(77,77,79,0.60); margin-bottom: 32px; }
 b { font-weight: 600; }
 .microcopy { font-size: 14px; color: rgba(77,77,79,0.60); }
@@ -118,6 +120,8 @@ b { font-weight: 600; }
 .card-content p { font-weight: 400; font-size: 12px; color: rgba(0,0,0,0.48); letter-spacing: 0; margin: 0; }
 .card-action:hover .icon, .card-action:hover span { color: #4C77B3; }
 
+.mob-link { font-size: 32px; color: #4C77B3; }
+
 .social-holder a { font-size: 32px; margin: 0 16px; color: #4D4D4F; }
 .social-holder a:hover { color: #4C77B3; }
 .footer-nav-link { font-weight: 600; font-size: 14px; color: rgba(77,77,79,0.60); margin-bottom: 16px; }
@@ -146,6 +150,7 @@ header .action-holder .btn { margin-left: 16px; }
 
 .main-hero, .doc-profile, .contact-form { padding: 4% 0; background: #ffffff url("../img/bg-asset.png") no-repeat top center; background-size: 50% auto; }
 .main-hero .featured-image img { width: 100%; }
+.main-hero .btn { margin-right: 8px; }
 .doc-profile .featured-image img { width: 100%; }
 
 footer { background: #FFFFFF; box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.08); }
@@ -246,3 +251,43 @@ form button { width: 100%; display: block; }
 }
 
 .drop-animate { -webkit-animation-name: fadeInDown; animation-name: fadeInDown; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; z-index: 999; }
+
+
+/** Responsive Style **/
+
+@media (max-width: 1200px) {
+
+.web { display: none; }
+.mobile-only { display: block; }
+.modal-dialog { max-width: 100%; margin: 0; }
+.header-cont { padding: 24px 2%; }
+.mob-nav-link.active-link { opacity: .5; pointer-events: none; cursor: default; box-shadow: 0 2px 4px 0 rgba(0,0,0,0); }
+.mob-nav-link { font-weight: 600; display: block; margin: 16px auto; font-size: 18px; color: #253A57;  background: #FFF; padding: 16px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13); border-radius: 8px; }
+.mob-nav-link .icon { font-size: 24px; float: right; color: rgba(37,58,87,0.60); }
+.mob-nav-link-primary { font-weight: 600; display: block; margin: 16px auto; font-size: 18px; color: #FFF;  background: #4C77B3; padding: 16px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13); border-radius: 8px; }
+.mob-nav-link-wpp { font-weight: 600; display: block; margin: 16px auto; font-size: 18px; color: #FFF;  background: #25D366; padding: 16px; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13); border-radius: 8px; }
+.mob-nav-link-wpp .icon { font-size: 24px; color: #FFF; margin-right: 8px;  }
+.collapse-nav-link { margin: 16px auto; display: block; font-weight: 600; font-size: 14px; color: #253A57; letter-spacing: 0; background: rgba(77,77,79,0.08); border-radius: 8px; padding: 16px; }
+.modal-dialog-scrollable .modal-content { max-height: 100%; height: 100vh; }
+
+ }
+
+ @media (max-width: 767px) {
+   .btn { display: block; margin: 16px auto; }
+   .main-hero { padding: 10% 0; }
+   .featured-image { margin-bottom: 32px; }
+   .content-holder { text-align: center; }
+   .doctor-profile { padding: 24px 0; }
+   .doctor-profile div { display: block; margin: 24px auto; text-align: center; }
+   .social-holder { float: none !important; text-align: center; }
+   .footer-nav { padding: 32px 0; text-align: center; }
+   .signature { text-align: center; }
+   .wee-link { float: none !important; display: block; margin: 24px auto; }
+   .footer-nav-link, .footer-nav-label { font-size: 24px; }
+   .proc-description { text-align: center; font-size: 24px; line-height: 32px; }
+   .share-pool { text-align: center; }
+   .video-holder { margin: 32px auto; }
+   .faq-section h2, .faq-item, .video-tag { text-align: center; }
+   .video-holder .btn .icon { font-size: 18px; margin-right: 8px; vertical-align: middle; }
+   .faq-item .icon { display: none; }
+ }
